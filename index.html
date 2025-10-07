@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Smart Shopping Cart</h1>
+    <div class="cart">
+      <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+      <div id="cart-box" class="cart-box hidden">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: ₹<span id="cart-total">0</span></p>
+        <button id="checkout-btn">Checkout</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="products">
+      <h2>Available Products</h2>
+      <div class="product-list">
+        <div class="product">
+          <h3>Apple</h3>
+          <p>Price: ₹50</p>
+          <button onclick="addToCart('Apple', 50)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Banana</h3>
+          <p>Price: ₹30</p>
+          <button onclick="addToCart('Banana', 30)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Mango</h3>
+          <p>Price: ₹70</p>
+          <button onclick="addToCart('Mango', 70)">Add to Cart</button>
+        </div>
+        <div class="product">
+          <h3>Milk</h3>
+          <p>Price: ₹40</p>
+          <button onclick="addToCart('Milk', 40)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
